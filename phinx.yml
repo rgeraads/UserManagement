@@ -1,0 +1,22 @@
+paths:
+    migrations: %%PHINX_CONFIG_DIR%%/migrations
+
+environments:
+    default_migration_table: phinxlog
+    default_database: development
+    production:
+        adapter: mysql
+        host: localhost
+        name: usermanagement
+        user: root
+        pass: ''
+        port: 3306
+        charset: utf8
+
+    development:
+        adapter: sqlite
+        name: ./data/usermanagement-dev
+
+    testing:
+        adapter: sqlite
+        memory: true

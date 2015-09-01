@@ -1,0 +1,7 @@
+/vendor/
+/.vagrant/
+
+/data/*
+!/data/.gitkeep
+/var/cache/*
+!/var/cache/.gitkeep
